@@ -13,7 +13,6 @@ platform:
   - x64
 
 configuration:
-  - Debug
   - Release
 
 install:
@@ -23,3 +22,7 @@ install:
 
 build:
   project: .build/projects/$(TOOLSET)/bgfx.sln
+  
+artifacts:
+- path: .build
+  name: release
